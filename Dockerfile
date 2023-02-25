@@ -4,7 +4,7 @@ RUN apt-get install -y apache2 curl
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN apt-get install zip
-RUN apt install unzip
+RUN apt-get install unzip
 
 RUN unzip photogenic.zip
 RUN cp -rvf photogenic/* .
